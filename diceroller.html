@@ -9,32 +9,32 @@
 </head>
 <body>
     <h1>Dice Roller</h1>
-    <p>How many faces on your dice?</h2>
-    <!-- User inputs number of faces on dice. JS needs to store and display number once submit button is clicked -->
-        <div>
-            <input type="number">
-        </div>
-        <div>
-            <button type="button"></button>
-            </div>
-cd
-            <!--    Function is displayed  then  is stored further down in 'previous results' table-->
-    <p>result</p> 
+
+            <label for= "diceSides">How many sides on your dice?</label>
+
+            <input type="number" id="diceSides" min="6" max="20" value="6">
+        
+            <button onclick="rollDice()">Click me</button>
+            <div id="result"></div>
+            
+
+        
+
    <table>
     <!--Stores answer 1-10 then refreshes-->
     <tr>
-        <td>r1</td>
-        <td>r2</td>
-        <td>r3</td>
-        <td>r4</td>
-        <td>r5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
-        <td>r6</td>
-        <td>r7</td>
-        <td>r8</td>
-        <td>r9</td>
-        <td>r10</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td> 
     </tr>
    </table>
    <script src="dr.js"></script>
